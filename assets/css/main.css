@@ -1,0 +1,134 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header #headerContainer {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header #headerContainer h1 {
+  color: #FD5F00;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 900px;
+}
+header #headerContainer nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header #headerContainer nav ul {
+  list-style: none;
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 35px 0px 35px 0px;
+}
+header #headerContainer button {
+  padding: 5px 10px;
+  background-color: white;
+  color: black;
+  border: black solid 1px;
+  border-radius: 5px;
+  display: none;
+  gap: 2px;
+}
+
+@media only screen and (min-width: 576px) and (max-width: 991px) {
+  header #headerContainer nav {
+    display: none;
+  }
+  header #headerContainer button {
+    display: block;
+  }
+}
+@media only screen and (min-width: 300px) and (max-width: 576px) {
+  header #headerContainer {
+    padding-top: 6px;
+    padding-bottom: 6px;
+  }
+  header #headerContainer h1 {
+    font-size: 14px;
+  }
+  header #headerContainer nav {
+    display: none;
+  }
+  header #headerContainer button {
+    display: block;
+    padding: 2px 14px;
+    font-size: 10px;
+  }
+}
+#firstSection {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("./../../../assets/images/hero_1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#textSection {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#textSection .startDiv {
+  width: 33.3333333333%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #FD5F00;
+  gap: 1px;
+}
+#textSection .startDiv div {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  border: gray solid 2px;
+  padding: 20px 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: white;
+  font-family: sans-serif;
+  gap: 10px;
+}
+#textSection .startDiv div h2 {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+}
+#textSection .black {
+  background-color: #4E4E4E;
+}
+#textSection .orange {
+  background-color: #FD5F00;
+}
+#textSection .red {
+  background-color: #A23131;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 576px) {
+  #textSection {
+    display: flex;
+    flex-direction: column;
+  }
+  #textSection .startDiv {
+    width: 100%;
+  }
+}
